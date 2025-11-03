@@ -848,6 +848,13 @@ def tanks():
                     {name:"SU-85", tier:5, class:"Tank Destroyer", country:"Soviet Union", next:["SU-100"], firepower: 80, armor: 25, speed: 35},
                     {name:"SU-100", tier:6, class:"Tank Destroyer", country:"Soviet Union", next:["SU-152","SU-100M1"], firepower: 90, armor: 30, speed: 35},
                     {name:"SU-152", tier:7, class:"Tank Destroyer", country:"Soviet Union", next:["ISU-152"], firepower: 100, armor: 35, speed: 30},
+                    {name:"ISU-152", tier:8, class:"Tank Destroyer", country:"Soviet Union", next:["ISU-152"], firepower: 112, armor: 24, speed: 23},
+                    {name:"Object 704", tier:9, class:"Tank Destroyer", country:"Soviet Union", next:["Object 268"], firepower: 140, armor: 30, speed:28},
+                    {name:"Object 268", tier:10, class:"Tank Destroyer", country:"Soviet Union", next:[""], firepower: 174, armor: 45, speed: 41},
+                    {name:"SU-100M1", tier:7, class:"Tank Destroyer", country:"Soviet Union", next:["SU-101"], firepower: 134 , armor: 34, speed:24 },
+                    {name:"SU-101", tier:8, class:"Tank Destroyer", country:"Soviet Union", next:["SU-122-54"], firepower: 145 , armor: 34, speed: 34},
+                    {name:"SU-122-54", tier:9, class:"Tank Destroyer", country:"Soviet Union", next:["Object 263"], firepower: 153, armor: 56, speed: 34},
+                    {name:"Object 263", tier:10, class:"Tank Destroyer", country:"Soviet Union", next:[""], firepower: 170, armor: 70, speed: 10},
                 ];
 
                 function getClassIcon(tankClass) {
@@ -962,4 +969,5 @@ def tanks():
     return render_template_string(tanks)
 
 if __name__ == '__main__':
+
     app.run()
